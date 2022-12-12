@@ -35,7 +35,7 @@ export default function Index() {
           </tr>
         );
         setData(newData);
-        setMessage('ユーザ一覧');
+        setMessage('Firebase data.');
       });
     });
   }, []);
@@ -49,24 +49,13 @@ export default function Index() {
             <thead>
               <tr>
                 <th>ID</th>
-                <th>名前</th>
-                <th>メール</th>
-                <th>年齢</th>
+                <th>Name</th>
+                <th>Mail</th>
+                <th>Age</th>
               </tr>
             </thead>
             <tbody>{data}</tbody>
           </table>
-          <a href='/users/new'>
-          <button className="btn btn-primary">
-            ユーザを追加する
-          </button>
-          </a>
-          &ensp;
-          <a href='/users/find'>
-          <button className="btn btn-primary">
-            ユーザを検索する
-          </button>
-          </a>
         </div>
       </Layout>
     </div>

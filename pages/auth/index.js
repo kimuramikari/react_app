@@ -10,7 +10,6 @@ import { useEffect, useState } from 'react';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-// import Index from '../users/index';
 
 export default function Profile() {
   // 1.Authオブジェクトを取得する
@@ -110,7 +109,7 @@ export default function Profile() {
           </p> */}
         </div>
         <hr />
-        <button className='btn btn-primary' onClick={signout}>サインアウト</button>
+        <button onClick={signout} className="btn btn-primary">サインアウト</button>
       </Layout>
     </div>
   );
